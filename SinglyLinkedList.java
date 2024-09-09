@@ -1,27 +1,17 @@
 import java.util.NoSuchElementException;
 
 /**
- * Your implementation of a non-circular SinglyLinkedList with a tail pointer.
- *
- * @author Kate Jeong
- * @version 1.0
- * @userid kjeong40
- * @GTID 903886263
+ * Implementation of a non-circular SinglyLinkedList with a tail pointer.
  */
 public class SinglyLinkedList<T> {
 
-    // Do not add new instance variables or modify existing ones.
     private SinglyLinkedListNode<T> head;
     private SinglyLinkedListNode<T> tail;
     private int size;
 
-    // Do not add a constructor.
-
     /**
      * Adds the element to the specified index.
-     *
-     * Must be O(1) for indices 0 and size and O(n) for all other cases.
-     *
+     *     
      * @param index the index to add the new element
      * @param data  the data to add
      * @throws IndexOutOfBoundsException if index < 0 or index > size
@@ -52,9 +42,7 @@ public class SinglyLinkedList<T> {
 
     /**
      * Adds the element to the front of the list.
-     *
-     * Must be O(1).
-     *
+     *     
      * @param data the data to add to the front of the list
      * @throws IllegalArgumentException if data is null
      */
@@ -73,9 +61,7 @@ public class SinglyLinkedList<T> {
 
     /**
      * Adds the element to the back of the list.
-     *
-     * Must be O(1).
-     *
+     *     
      * @param data the data to add to the back of the list
      * @throws IllegalArgumentException if data is null
      */
@@ -96,9 +82,6 @@ public class SinglyLinkedList<T> {
 
     /**
      * Removes and returns the element at the specified index.
-     *
-     * Must be O(1) for indices 0 and O(n) for all other
-     * cases.
      *
      * @param index the index of the element to remove
      * @return the data that was removed
@@ -126,9 +109,7 @@ public class SinglyLinkedList<T> {
 
     /**
      * Removes and returns the first data of the list.
-     *
-     * Must be O(1).
-     *
+     *     
      * @return the data formerly located at the front of the list
      * @throws NoSuchElementException if the list is empty
      */
@@ -147,8 +128,6 @@ public class SinglyLinkedList<T> {
 
     /**
      * Removes and returns the last data of the list.
-     *
-     * Must be O(n).
      *
      * @return the data formerly located at the back of the list
      * @throws NoSuchElementException if the list is empty
@@ -174,8 +153,6 @@ public class SinglyLinkedList<T> {
     /**
      * Returns the element at the specified index.
      *
-     * Must be O(1) for indices 0 and size - 1 and O(n) for all other cases.
-     *
      * @param index the index of the element to get
      * @return the data stored at the index in the list
      * @throws IndexOutOfBoundsException if index < 0 or index >= size
@@ -200,8 +177,6 @@ public class SinglyLinkedList<T> {
     /**
      * Returns whether or not the list is empty.
      *
-     * Must be O(1).
-     *
      * @return true if empty, false otherwise
      */
     public boolean isEmpty() {
@@ -213,7 +188,6 @@ public class SinglyLinkedList<T> {
      *
      * Clears all data and resets the size.
      *
-     * Must be O(1).
      */
     public void clear() {
         head = null;
@@ -223,11 +197,6 @@ public class SinglyLinkedList<T> {
 
     /**
      * Removes and returns the last copy of the given data from the list.
-     *
-     * Do not return the same data that was passed in. Return the data that
-     * was stored in the list.
-     *
-     * Must be O(n).
      *
      * @param data the data to be removed from the list
      * @return the data that was removed
@@ -271,9 +240,7 @@ public class SinglyLinkedList<T> {
 
     /**
      * Returns an array representation of the linked list.
-     *
-     * Must be O(n) for all cases.
-     *
+     *     
      * @return the array of length size holding all of the data (not the
      * nodes) in the list in the same order
      */
@@ -292,9 +259,6 @@ public class SinglyLinkedList<T> {
     /**
      * Returns the head node of the list.
      *
-     * For grading purposes only. You shouldn't need to use this method since
-     * you have direct access to the variable.
-     *
      * @return the node at the head of the list
      */
     public SinglyLinkedListNode<T> getHead() {
@@ -305,8 +269,6 @@ public class SinglyLinkedList<T> {
     /**
      * Returns the tail node of the list.
      *
-     * For grading purposes only. You shouldn't need to use this method since
-     * you have direct access to the variable.
      *
      * @return the node at the tail of the list
      */
@@ -318,8 +280,6 @@ public class SinglyLinkedList<T> {
     /**
      * Returns the size of the list.
      *
-     * For grading purposes only. You shouldn't need to use this method since
-     * you have direct access to the variable.
      *
      * @return the size of the list
      */
